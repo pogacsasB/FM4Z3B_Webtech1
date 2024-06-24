@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HSR PV Characters</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <script src="jquery-3.3.1.min.js"></script>
+		<script>
+		$(function() {
+            var akthually=$("<br><br><span>Although Paths are technically classes, characters are still more defined by their actual kit rather than the role of the Path. As an example, Acheron is a Nihility character, and while it is true that she debuffs the enemies, it is also true that her playstyle is a selfish hypercarry, as in a Damage Dealer, instead of a support.</span><br>");
+			$("p").click( function() {
+				$(this).css("font-size","20px");
+                $(this).css("color","white");
+			});
+            $("#actually").click( function() {
+				$(this).append(akthually);
+			});
+        });
+        </script>
+</head>
+
+<body>
+
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+           <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="photos/hsr_logo.png"></a>
+              <a class="navbar-brand" href="#">HSR Pull Value</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-
+                 label="Toggle navigation">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="index.html">Main Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_characters.html">About Characters</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="pull_value.html">Pull Value</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="survey.html">Survey</a>
+                     </li>
+                 </ul>
+              </div>
+           </div>
+        </nav>
+     </section>
+
+     <div style="background-color: rgb(113, 164, 212); height: 100%; display: grid; place-items: center;">
+        <div class="maindiv">
+            <div class="childdiv">
+            <h1 style="text-align: center;">About Characters</h1>
+            
+                <p>
+                    All Characters in Honkai: Star Rail have two main defining attributes:
+                </p>
+
+                <ol>
+                    <li>their <b>Element</b></li>
+                    <li>their <b>Path</b></li>
+                </ol>
+
+                <h3>Characters <b>Element</b></h3>
+                <p>
+                    This attribute of theirs determine what type of Damage they deal, and what type of <i>Breaks</i> they can trigger if they deplete the toughness of an enemy.
+                </p>
+                <p>
+                    These are the following available Elements:
+                </p>
+                <ul>
+                    <li style="color: rgb(184, 0, 0);">Fire</li>
+                    <li style="color: rgb(1, 172, 1);">Wind</li>
+                    <li style="color: rgb(135, 248, 248);">Ice</li>
+                    <li style="color: rgb(95, 10, 95);">Lightning</li>
+                    <li style="color: rgb(70, 70, 70);">Physical</li>
+                    <li style="color: rgb(20, 3, 82);">Quantum</li>
+                    <li style="color: rgb(163, 163, 28);">Imaginary</li>
+                </ul>
+                <p>
+                    It also limits what relics can be used on the character. As an example, a <b style="color: rgb(184, 0, 0);">Fire</b> character cannot benefit from a 
+                    <b style="color: rgb(20, 3, 82);">Quantum</b> Damage increase.
+                </p>
+
+                <h3>Characters <b>Path</b></h3>
+                <p id="actually">
+                    This attribute works as a sort of 'class'. Each Path specialises in a different thing, making them distinct from each other. However we will see that sometimes even inside a
+                    certain Path, there can be characters that utilize the gimmick of the path quite differently.
+                </p>
+                <p>
+                    These are the following available Paths:
+                </p>
+                <table class="path-table">
+                    <tr>
+                        <th id="path-icon">Path Icon</th>
+                        <th id="path-name">Path Name</th>
+                        <th>Path Description</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="photos/paths/hunt.png" alt="" id="path-icon">
+                        </td>
+                        <td>
+                            Hunt
+                        </td>
+                        <td>
+                            Deals extraordinary amounts of single-target damage. The main damage dealer against Elite Enemies.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="photos/paths/erudition.png" alt="" id="path-icon">
+                        </td>
+                        <td>
+                            Erudition
+                        </td>
+                        <td>
+                            Deals remarkable amounts of multi-target damage. The main damage dealer against groups of enemies.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="photos/paths/dectruction.png" alt="" id="path-icon">
+                        </td>
+                        <td>
+                            Destruction
+                        </td>
+                        <td>
+                            Deals outstanding amounts of damage and possesses great survivability. Suitable for various combat scenarios.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="photos/paths/abundance.png" alt="" id="path-icon">
+                        </td>
+                        <td>
+                            Abundance
+                        </td>
+                        <td>
+                            Heals allies, restores HP to the team, as well as offering debuff cleansing most of the time.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="photos/paths/preservation.png" alt="" id="path-icon">
+                        </td>
+                        <td>
+                            Preservation
+                        </td>
+                        <td>
+                            Possesses powerful defensive abilities to protect allies in various ways.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="photos/paths/harmony.png" alt="" id="path-icon">
+                        </td>
+                        <td>
+                            Harmony
+                        </td>
+                        <td>
+                            Applies buffs to allies to improve the team's combat capacities.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="photos/paths/nihility.png" alt="" id="path-icon">
+                        </td>
+                        <td>
+                            Nihility
+                        </td>
+                        <td>
+                            Applies debuffs to enemies to reduce their combat capacities.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+     </div>
+
+</body>
