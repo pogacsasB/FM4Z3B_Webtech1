@@ -1,1 +1,1 @@
-Beadandó a Web technológiák 1 tárgyhoz.
+Beadandó Web technológiák 1 tárgyhoz.
